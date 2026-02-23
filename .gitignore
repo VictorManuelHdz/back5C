@@ -1,0 +1,5 @@
+#Carpetas de node#
+node_modules/
+#Variables de entorno#
+.env
+.DS_Store

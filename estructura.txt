@@ -1,0 +1,20 @@
+api-gestion-estudiantes/
+├── src/
+│   ├── config/
+│   │   └── db.js                → Conexión a MySQL (pool)
+│   ├── controllers/             → Lógica de negocio / manejo de respuestas HTTP
+│   │   ├── alumnos.controller.js
+│   │   └── grupos.controller.js
+│   ├── models/                  → Consultas SQL encapsuladas
+│   │   ├── alumno.model.js
+│   │   └── grupo.model.js
+│   ├── routes/                  → Definición de rutas y verbos HTTP
+│   │   ├── alumnos.routes.js
+│   │   └── grupos.routes.js
+│   └── app.js                   → Configuración principal de Express
+├── .env                         → Variables de entorno (NO subir a git)
+├── .env.example                 → Plantilla para que otros sepan qué variables necesitan
+├── .gitignore
+├── package.json
+├── vercel.json                  → Configuración para despliegue en Vercel
+└── README.md                    → Instrucciones básicas (opcional para la práctica)
