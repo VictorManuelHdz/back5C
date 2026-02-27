@@ -10,6 +10,10 @@ app.get('/', (req, res)=> {
     res.send("esto es un perimer API desde express...");
 })
 
+app.get('/otra', (req, res)=> {
+    res.send("otra ruta");
+})
+
 app.listen(PORT, ()=>{
     console.log(`Aplicacion corriendo en el puerto ${PORT}`)
 })
