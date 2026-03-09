@@ -3,6 +3,7 @@ import express from 'express'
 import dontenv from 'dotenv'
 import cors from 'cors'
 import gruposRoutes from './routes/grupos.routes.js'
+import authRoutes from './routes/auth.routes.js'
 
 //! creamos el objeto de espress para nuestra aplicacion
 const app = express();
@@ -19,6 +20,7 @@ app.use(cors())
 
 //! Rutas
 app.use('/api/grupos', gruposRoutes);
+app.use('/api/auth', authRoutes);
 
 app.get('/', (req, res)=> {
     res.send("esto es un perimer API desde express...");
