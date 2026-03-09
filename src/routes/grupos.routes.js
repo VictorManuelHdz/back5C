@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { verificarToken } from '../middlewares/auth.middleware.js';
+import verificarToken from '../middlewares/auth.middleware.js';
 import * as ctrl from '../controllers/grupos.controller.js';
 
 const router = Router();
