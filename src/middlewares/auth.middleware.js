@@ -3,7 +3,7 @@ import env from 'dotenv';
 
 env.config();
 
-export const verificarToken = (req, res, next) => {
+const verificarToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];
     
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
@@ -20,3 +20,5 @@ export const verificarToken = (req, res, next) => {
         res.status(403).json({ message: 'Token no válido o expirado' });
     }
 };
+
+export default verificarToken;
